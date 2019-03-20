@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block main %}
+
+    List
+    <br>
+    {% for departamento in object_list %}
+
+        <a href="">
+            {{ departamento }}
+        </a>
+
+        <a href="">
+
+            Deletar
+
+        </a>
+
+        <br>
+
+    {% endfor %}
+
+<a href="" class="btn btn-info">Novo</a>
+{% endblock %}
