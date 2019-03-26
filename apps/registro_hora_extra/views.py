@@ -8,11 +8,15 @@ from django.views.generic import (
     DeleteView,
     CreateView
 )
+
+
 class HoraExtraList(ListView):
     model = RegistroHoraExtra
+
     def get_queryset(self):
         empresa_logada = self.request.user.funcionario.empresa
         return RegistroHoraExtra.objects.filter(funcionario__empresa=empresa_logada)
+
 
 class HoraExtraEdit(UpdateView):
     model = RegistroHoraExtra
@@ -30,6 +34,7 @@ class HoraExtraDelete(DeleteView):
     model = RegistroHoraExtra
     success_url = reverse_lazy('list_hora_extra')
 
+
 class HoraExtraNovo(CreateView):
     model = RegistroHoraExtra
     form_class = RegistroHoraExtraForm
@@ -40,3 +45,4 @@ class HoraExtraNovo(CreateView):
         return kwargs
 
     success_url = reverse_lazy('list_hora_extra')
+    
