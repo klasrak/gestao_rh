@@ -4,5 +4,5 @@
 *.pyc
 gestao_rh/__pycache__/
 .vscode
-media
+media/
 gestao_rh.pem

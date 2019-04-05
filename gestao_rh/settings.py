@@ -9,7 +9,7 @@ SECRET_KEY = 'kwdk3+xp#g@ie&6sy6ij_!ysie#!xw6)^&3)^mtwbhufi5fpn*'
 DEBUG = True
 
 
-ALLOWED_HOSTS = ['18.216.245.76']
+ALLOWED_HOSTS = ['18.216.245.76', 'localhost']
 
 
 INSTALLED_APPS = [
@@ -112,7 +112,7 @@ MEDIA_URL = '/media/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
-STATIC_ROOT = os.path.join(BASE_DIR, "static/")
+#STATIC_ROOT = os.path.join(BASE_DIR, "static/")
 
 LOGIN_REDIRECT_URL = 'home'
 
