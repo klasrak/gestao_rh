@@ -20,5 +20,19 @@
 
     {% endfor %}
 
-<a href="{% url 'create_funcionario' %}" class="btn btn-info">Novo</a>
+    <a href="{% url 'create_funcionario' %}" class="btn btn-primary">Novo</a>
+
+    <a href="{% url 'relatorio_funcionarios' %}" class="btn btn-info">
+        Relatório de funcionários
+    </a>
+
+    <a href="{% url 'relatorio_funcionarios_html' %}" class="btn btn-primary">
+        Relatório de funcionários HTML
+    </a>
+
+    <a href="{% url 'relatorio_funcionarios_html_debug' %}" class="btn btn-danger">
+        Relatório de funcionários HTML
+    </a>
+
+
 {% endblock %}
