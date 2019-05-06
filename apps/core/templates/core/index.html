@@ -1,12 +1,18 @@
 {% extends 'base.html' %}
+{% load i18n %}
 
 {% block main %}
 <div class="row">
     <div class="col-sm">
         {{ usuario.funcionario.empresa }}
+        {% blocktrans %}
+            My big block
+            of text
+            must go right here
+        {% endblocktrans %}
     </div>
     <div class="col-sm">
-        Olá {{ usuario.funcionario.nome }}
+        {% trans 'Hi ' %} {{ usuario.funcionario.nome }}
         <a href="{% url 'list_funcionarios' %}">Gerenciar funcionários</a>
         <a href="{% url 'list_departamentos' %}">Gerenciar departamentos</a>
         <a href="{% url 'list_hora_extra' %}">Gerenciar banco de horas</a>
