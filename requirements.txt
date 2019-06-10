@@ -2,7 +2,7 @@ amqp==2.4.2
 astroid==2.2.5
 billiard==3.6.0.0
 celery==4.3.0
-Django==2.2.1
+Django==2.2.2
 django-bootstrap-form==3.4
 django-celery-beat==1.4.0
 django-celery-results==1.0.4
