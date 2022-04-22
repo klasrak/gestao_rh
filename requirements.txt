@@ -18,7 +18,7 @@ mccabe==0.6.1
 Pillow==6.0.0
 pkg-resources==0.0.0
 pylint==2.3.1
-PyPDF2==1.26.0
+PyPDF2==1.27.5
 python-crontab==2.3.6
 python-dateutil==2.8.0
 pytz==2018.9
